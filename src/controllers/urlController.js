@@ -19,6 +19,7 @@ redisClient.on("connect", async function () {
     console.log("Connected to Redis..");    // SENDING MESSAGE TO CONSOLE FOR SUCCESSFUL CONNECTION OF REDIS
 });
 
+
 //connect to the server
 
 const SET_ASYNC = promisify(redisClient.SET).bind(redisClient);       // DEFINING SET FUNCTION OF REDIS
